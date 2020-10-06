@@ -1,5 +1,8 @@
 #testimonial {
   background-color: var(--color-light-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials {
