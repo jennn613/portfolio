@@ -15,7 +15,7 @@
 
 .navbar__logo {
   font-size: var(--font-medium);
-  color: car(--color-white);
+  color: var(--color-white);
 }
 
 .navbar__menu__item {

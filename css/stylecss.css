@@ -2,6 +2,8 @@
 @import "./navbar.css";
 @import "./home.css";
 @import "./about_me.css";
+@import "./skill.css";
+@import "./work.css";
 
 /* global */
 :root {
@@ -71,14 +73,14 @@ h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  margin: 16px 0px;
+  margin: 16px 0 20px 0;
 }
 
 h2 {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0px;
+  margin: 8px 0 10px 0;
 }
 
 h3 {

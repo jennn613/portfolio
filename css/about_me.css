@@ -32,8 +32,8 @@
 }
 
 .major__title,
-.major__description {
-  color: var(--color-dark-grey);
+.experience__name {
+  color: var(--color-grey);
 }
 
 .major__description {
@@ -42,4 +42,29 @@
 
 .experiences {
   display: flex;
+  align-items: center;
+}
+
+.experience__logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.experience__description {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.major__description,
+.experience__period {
+  color: var(--color-dark-grey);
+}
+
+.experience__name {
+  font-size: var(--font-small);
+}
+
+.experience__period {
+  font-size: var(--font-micro);
 }
