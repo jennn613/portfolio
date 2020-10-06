@@ -1,0 +1,63 @@
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-pink);
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+.navbar__toggle-btn:hover .navbar__menu
+{display: block;}
+
+  /* home */
+
+  .about__majors{flex-direction: column;
+  }
+
+  .major {margin-bottom:38px;}
+
+  .skillset {display: flex;
+  flex-direction: column;}
+
+  /* my work */
+
+
+.work__categories {display: flex; margin-bottom: 20px;}
+
+.project {flex-grow: 1;}
+
+/* testimonial */
+
+.testimonials__avatar {
+  width: 100px;
+  height:100px;
+}
+
+.name {position: relative;
+  top: 20px;
+}
+
+.name > a {display: block; margin-left: 0;}

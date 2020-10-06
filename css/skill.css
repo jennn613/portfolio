@@ -3,7 +3,6 @@
 }
 
 .skillset {
-  height: 350px;
   display: flex;
   background-color: var(--color-light-grey);
   margin: 20px 0;
