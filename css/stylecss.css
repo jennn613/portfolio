@@ -10,9 +10,10 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-pink: #309ad6;
+  --color-dark-pink: #3586c9;
   --color-grey: #4d4d4d;
+  --color-light-grey: #716e70;
   --color-dark-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
@@ -87,7 +88,7 @@ h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
-  margin: 8px 0px;
+  margin: 8px 0 10px 0;
 }
 
 p {
