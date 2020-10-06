@@ -6,6 +6,7 @@
 @import "./work.css";
 @import "./testimonial.css";
 @import "./contact.css";
+@import "./media.css";
 
 /* global */
 :root {
@@ -99,3 +100,7 @@ p {
   color: var(--color-black);
   margin: 4px 0px;
 }
+
+/* media screen */
+
+@media screen and;
