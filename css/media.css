@@ -38,11 +38,13 @@
     display: block;
   }
 
-
+.section {padding:20px; padding-top:40px;}
 
   /* home */
 
   .about__majors{flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 0;
   }
 
   .major {margin-bottom:38px;}
@@ -52,18 +54,27 @@
 
   /* my work */
 
-.work__categories {display: flex; margin-bottom: 20px;}
+.work__categories {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;}
 
 .project {flex-grow: 1;}
 
+.category__btn {width: 50%; margin: 4px 0;}
 
 
 /* testimonial */
 
+.testimonial {flex-direction: column; align-items: center;}
+.testimonial:last-child {flex-direction: column-reverse;}
+
+
 .testimonials__avatar {
-  width: 100px;
-  height:100px;
+  width: 80px;
+  height:80px;
+
 }
+
+.testimonials__avatar:nth-child(even),
+.testimonials__avatar:nth-child(odd) {margin:0 0 10px 0;}
 
 .name {position: relative;
   top: 20px;
@@ -71,3 +82,5 @@
 
 .name > a {display: block; margin-left: 0;}
 
+.arrow-up {width: 40px; height: 40px; font-size: 25px;
+right: 16px; bottom: 16px;}
