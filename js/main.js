@@ -21,7 +21,15 @@ navbarMenu.addEventListener('click', (event) => {
   const link= target.dataset.link;
   if(link == null){
     return;
-  } console.log(event.target.dataset.link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
+  } scrollIntoView(link);
 });
+
+// contact button to contact section
+
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', () => {
+  scrollIntoView('#contact');
+})
+
+  function scrollIntoView(selector){const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'});}
