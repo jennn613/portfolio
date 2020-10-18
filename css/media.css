@@ -20,6 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-pink);
+    z-index: 1;
   }
 
   .navbar__menu {
@@ -29,7 +30,8 @@
     display: none;
   }
 
-.navbar__toggle-btn:hover .navbar__menu
+.navbar__toggle-btn:hover + .navbar__menu,
+.navbar__toggle-btn:active + .navbar__menu
 {display: block;}
 
   /* home */
@@ -44,10 +46,11 @@
 
   /* my work */
 
-
 .work__categories {display: flex; margin-bottom: 20px;}
 
 .project {flex-grow: 1;}
+
+
 
 /* testimonial */
 
