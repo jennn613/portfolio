@@ -101,6 +101,25 @@ p {
   margin: 4px 0px;
 }
 
-/* media screen */
+.arrow-up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-dark-pink);
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in-out;
+  pointer-events: none;
+}
 
-@media screen and;
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}

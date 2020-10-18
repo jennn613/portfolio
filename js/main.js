@@ -18,7 +18,7 @@ document.addEventListener('scroll', () => {
   const navbarMenu = document.querySelector('.navbar__menu');
   navbarMenu.addEventListener('click', (event) => {
     
-    const target = event.target;
+  const target = event.target;
   const link= target.dataset.link;
   if(link == null){
     return;
@@ -32,9 +32,6 @@ contactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 })
 
-function scrollIntoView(selector){const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: 'smooth'});}
-
     //make home fade in
   
   const home = document.querySelector('.home__container');
@@ -44,3 +41,20 @@ function scrollIntoView(selector){const scrollTo = document.querySelector(select
       home.style.opacity = 1 - window.scrollY / homeHeight;
     
   });
+
+//scroll to the top
+
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () =>{
+if(window.scrollY > homeHeight / 2)
+{arrowUp.classList.add('visible');} else {
+  arrowUp.classList.remove('visible');
+}});
+
+arrowUp.addEventListener('click', () => {
+  window.scrollTo({top:0, left:0, behavior:'smooth'});
+});
+
+  
+function scrollIntoView(selector){const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: 'smooth'});}
