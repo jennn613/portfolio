@@ -20,8 +20,12 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-pink);
+    background-color: var(--color-pink);
     z-index: 1;
   }
+
+  #navbar.navber--dark
+  {padding: 16px;}
 
   .navbar__menu {
     flex-direction: column;
@@ -30,9 +34,11 @@
     display: none;
   }
 
-.navbar__toggle-btn:hover + .navbar__menu,
-.navbar__toggle-btn:active + .navbar__menu
-{display: block;}
+  .navbar__menu.open {
+    display: block;
+  }
+
+
 
   /* home */
 
@@ -64,3 +70,4 @@
 }
 
 .name > a {display: block; margin-left: 0;}
+

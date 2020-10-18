@@ -13,6 +13,7 @@ document.addEventListener('scroll', () => {
   }
   });
 
+
   
   //Handle scrolling when tapping on the navbar menu
   const navbarMenu = document.querySelector('.navbar__menu');
@@ -22,8 +23,19 @@ document.addEventListener('scroll', () => {
   const link= target.dataset.link;
   if(link == null){
     return;
-  } scrollIntoView(link);
+  } 
+  navbarMenu.classList.remove('open');
+  scrollIntoView(link);
 });
+
+
+  //toggle btn 
+
+  const toggleBtn = document.querySelector('.navbar__toggle-btn');
+  toggleBtn.addEventListener('click', ()=> { 
+    navbarMenu.classList.toggle('open');
+  
+  });
 
 // contact button to contact section
 
@@ -66,12 +78,14 @@ workBtnContainer.addEventListener('click', (e) => {
     return;
   }
 
+
+
   //remove selection form the previous item and select new one
+
   const active =document.querySelector('.category__btn.selected');
   active.classList.remove('selected');
   const target= e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
-
 
   projectContainer.classList.add('ani-out');
   setTimeout( ()=> {  projects.forEach((project) => {
